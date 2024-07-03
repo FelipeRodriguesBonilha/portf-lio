@@ -1,0 +1,32 @@
+
+.navbar {
+    background-color: #252525;
+    width: 100%;
+    height: 90px;
+    border-top: 5px solid #b055c7;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(150, 0, 255, 0.5); /* Sombra roxa */
+}
+
+.max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    color: white;
+}
+
+.links {
+    color: white;
+}
+
+a {
+    color: #b055c7;
+    text-decoration: none;
+}

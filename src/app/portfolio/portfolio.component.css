@@ -1,0 +1,242 @@
+.page {
+    background-color: #252525;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* main */
+.main {
+    height: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.texts {
+    color: white;
+    opacity: 0;
+    transform: translate(-200px);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+}
+
+/* .paragraph {
+    text-shadow: 0 0 20px rgba(149, 0, 255, 0.5);
+} */
+
+.paragraph-writer {
+    color: #b055c7;
+}
+
+.container-writer {
+    display: flex;
+    align-items: flex-end;
+    /* Alinha o conteúdo na parte inferior do contêiner */
+}
+
+.btn-linkedin,
+.btn-github {
+    border: none;
+    border: 3px solid #b055c7;
+    background-color: transparent;
+    color: white;
+    padding: 8px;
+    border-radius: 20px;
+    margin-right: 20px;
+    width: 150px;
+    transition: .5s;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(150, 0, 255, 0.5);
+    /* Sombra roxa */
+}
+
+.btn-linkedin:hover,
+.btn-github:hover {
+    transform: scale(1.1);
+    background-color: #b055c7;
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.section-img {
+    opacity: 0;
+    transform: translate(200px);
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(150, 0, 255, 0.5);
+}
+
+.container-about-me,
+.container-tecnologies,
+.container-projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.container-text-about-me,
+.container-text-tecnologies,
+.container-text-projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    text-align: center;
+    transform: scale(1.2);
+    opacity: 0;
+}
+
+.container-text-tecnologies {
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.container-text-about-me .text-w-underline,
+.container-text-tecnologies .text-w-underline,
+.container-text-projects .text-w-underline {
+    position: relative;
+    padding: 0 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.container-text-about-me .text-w-underline::after,
+.container-text-tecnologies .text-w-underline::after,
+.container-text-projects .text-w-underline::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(to right, purple, #00000024);
+}
+
+.icon {
+    color: #b055c7;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.container-card-tecnologies {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-card-tecnologies .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: 90px;
+    margin: 20px;
+    color: #b055c7;
+    border: 2px solid #b055c7;
+    background-color: rgb(33, 33, 33);
+    opacity: 1;
+    transform: scale(1.0);
+    font-size: 12px;
+    z-index: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(150, 0, 255, 0.5);
+}
+
+.container-card-tecnologies .card:hover {
+    transform: scale(1.5);
+}
+
+.container-card-projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.container-card-projects .card-project {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 400px;
+    margin: 20px;
+    color: #ffffff;
+    border: 2px solid #b055c7;
+    background-color: rgb(33, 33, 33);
+    opacity: 1;
+    transform: scale(1.0);
+    font-size: 12px;
+    z-index: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(150, 0, 255, 0.5);
+    padding: 30px;
+}
+
+.title-card {
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 17px;
+}
+
+.title-card::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: -10px;
+    width: 70%;
+    height: 3px;
+    background: linear-gradient(to right, #b055c7, #00000024);
+}
+
+.body-card {
+    margin-bottom: 20px;
+}
+
+.icon-external {
+    color: #b055c7;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.row-external {
+    display: flex;
+    align-items: center;
+}

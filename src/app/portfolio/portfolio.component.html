@@ -1,0 +1,129 @@
+<!-- <app-particles></app-particles> -->
+<div class="page">
+    <div class="main">
+        <div class="max-width">
+            <div class="section">
+                <div class="texts" #texts>
+                    <p class="paragraph">Portfólio</p>
+                    <p class="paragraph">Felipe Bonilha</p>
+                </div>
+                <div class="container-writer">
+                    <div class="paragraph-writer"><ngx-typed-writer [strings]="strings" [cursorChar]="'|'"
+                            [showCursor]="true" [backSpeed]="30" [typeSpeed]="100" [backDelay]="3000">
+                        </ngx-typed-writer></div>
+                </div>
+                <div class="container-btns">
+                    <button class="btn-linkedin">Linkedin</button>
+                    <button class="btn-github">Github</button>
+                </div>
+            </div>
+            <div class="section-img" #image>
+                <img src="../../assets/imagens/file.png" class="img">
+            </div>
+        </div>
+    </div>
+
+    <div class="about-me">
+        <div class="max-width">
+            <div class="container-about-me" id="sobre-mim">
+                <div class="container-text-about-me" #text>
+                    <p class="text-w-underline">Sobre mim</p>
+                    <p class="text">Olá, sou Alisson Lima, Desenvolvedor Full Stack em busca de superar meus limites
+                        como
+                        Dev, busco também a excelência em todos os campos onde atuo. Nasci em Rio Branco, Acre, e me
+                        formei
+                        em Análise e Desenvolvimento de Sistemas em 2019. Estou sempre participando de bootcamps,
+                        principalmente em Java, Spring Boot, Angular e Cloud como AWS e Azure. Tenho um grande interesse
+                        em
+                        Desenvolvimento de Software, Inteligência Artificial, obras de ficção científica e astronomia,
+                        de
+                        modo que estou sempre procurando aprender mais sobre esses campos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tecnologies">
+        <div class="max-width">
+            <div class="container-tecnologies" id="tecnologias">
+                <div class="container-text-tecnologies" #text2>
+                    <p class="text-w-underline">Tecnologias</p>
+                    <p class="text">Possuo conhecimentos e já desenvolvi projetos com essas tecnologias!</p>
+                </div>
+                <div class="container-card-tecnologies">
+                    @for(tec of tecnologies; track $index){
+                    <div class="card" #cards>
+                        <i class="{{tec.icon}} icon"></i>
+                        {{tec.description}}
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects">
+        <div class="max-width">
+            <div class="container-projects" id="projetos">
+                <div class="container-text-projects" #text3>
+                    <p class="text-w-underline">Projetos</p>
+                    <p class="text">Aqui estão alguns projetos que eu desenvolvi!</p>
+                </div>
+                <div class="container-card-projects">
+                    <div class="row-cards">
+                        <div #cardsProjects class="card-project">
+                            <p class="title-card">Sistemas de ECVS - Se7i Cautelar</p>
+                            <p class="body-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                                necessitatibus
+                                facilis totam ratione atque, sint amet mollitia consequuntur cupiditate voluptatibus
+                                delectus consectetur quia accusantium accusamus dolorum eaque harum illo consequatur?
+                            </p>
+                            <div class="row-external">
+                                <fa-icon [icon]="faArrowUpRightFromSquare" class="icon-external"></fa-icon>
+                                <p>Acesse o Projeto</p>
+                            </div>
+                        </div>
+                        <div #cardsProjects class="card-project">
+                            <p class="title-card">A Escolhida Backend</p>
+                            <p class="body-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                                necessitatibus
+                                facilis totam ratione atque, sint amet mollitia consequuntur cupiditate voluptatibus
+                                delectus consectetur quia accusantium accusamus dolorum eaque harum illo consequatur?
+                            </p>
+                            <div class="row-external">
+                                <fa-icon [icon]="faArrowUpRightFromSquare" class="icon-external"></fa-icon>
+                                <p>Acesse o Projeto</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-cards">
+                        <div #cardsProjects class="card-project">
+                            <p class="title-card">Sistema de Vendas Online</p>
+                            <p class="body-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                                necessitatibus
+                                facilis totam ratione atque, sint amet mollitia consequuntur cupiditate voluptatibus
+                                delectus consectetur quia accusantium accusamus dolorum eaque harum illo consequatur?
+                            </p>
+                            <div class="row-external">
+                                <fa-icon [icon]="faArrowUpRightFromSquare" class="icon-external"></fa-icon>
+                                <p>Acesse o Projeto</p>
+                            </div>
+                        </div>
+                        <div #cardsProjects class="card-project">
+                            <p class="title-card">Outros Projetos</p>
+                            <p class="body-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                                necessitatibus
+                                facilis totam ratione atque, sint amet mollitia consequuntur cupiditate voluptatibus
+                                delectus consectetur quia accusantium accusamus dolorum eaque harum illo consequatur?
+                            </p>
+                            <div class="row-external">
+                                <fa-icon [icon]="faArrowUpRightFromSquare" class="icon-external"></fa-icon>
+                                <p>Acesse o Projeto</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>

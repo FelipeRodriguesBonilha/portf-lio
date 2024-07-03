@@ -1,0 +1,14 @@
+app-navbar {
+    position: relative;
+    z-index: 1000;
+}
+
+app-particles {
+    position: relative;
+    z-index: 0;
+}
+
+app-footer {
+    position: relative;
+    z-index: 1000;
+}

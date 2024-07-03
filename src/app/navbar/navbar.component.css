@@ -1,0 +1,53 @@
+
+.navbar {
+    background-color: #252525;
+    width: 100%;
+    height: 90px;
+    border-bottom: 5px solid #b055c7;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(150, 0, 255, 0.5); /* Sombra roxa */
+}
+
+.max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    color: white;
+}
+
+.links ul li {
+    display: inline-block;
+    color: white;
+    margin-left: 15px;
+    position: relative;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+.links ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 3px;
+    background-color: #b055c7;
+    transition: width 0.5s;
+}
+
+.links ul li:hover::after {
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
