@@ -2,23 +2,25 @@
 <div class="page">
     <div class="main">
         <div class="max-width">
-            <div class="section">
-                <div class="texts" #texts>
-                    <p class="paragraph">Portfólio</p>
-                    <p class="paragraph">Felipe Bonilha</p>
+            <div class="container-main">
+                <div class="section">
+                    <div class="texts" #texts>
+                        <p class="paragraph">Portfólio</p>
+                        <p class="paragraph">Felipe Bonilha</p>
+                    </div>
+                    <div class="container-writer">
+                        <div class="paragraph-writer"><ngx-typed-writer [strings]="strings" [cursorChar]="'|'"
+                                [showCursor]="true" [backSpeed]="30" [typeSpeed]="100" [backDelay]="3000">
+                            </ngx-typed-writer></div>
+                    </div>
+                    <div class="container-btns">
+                        <button class="btn-linkedin">Linkedin</button>
+                        <button class="btn-github">Github</button>
+                    </div>
                 </div>
-                <div class="container-writer">
-                    <div class="paragraph-writer"><ngx-typed-writer [strings]="strings" [cursorChar]="'|'"
-                            [showCursor]="true" [backSpeed]="30" [typeSpeed]="100" [backDelay]="3000">
-                        </ngx-typed-writer></div>
+                <div class="section-img" #image>
+                    <img src="../../assets/imagens/file.png" class="img">
                 </div>
-                <div class="container-btns">
-                    <button class="btn-linkedin">Linkedin</button>
-                    <button class="btn-github">Github</button>
-                </div>
-            </div>
-            <div class="section-img" #image>
-                <img src="../../assets/imagens/file.png" class="img">
             </div>
         </div>
     </div>
@@ -28,7 +30,9 @@
             <div class="container-about-me" id="sobre-mim">
                 <div class="container-text-about-me" #text>
                     <p class="text-w-underline">Sobre mim</p>
-                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et ratione iusto laudantium nisi similique. Recusandae hic corrupti doloribus autem asperiores assumenda repudiandae quo ullam laudantium nihil! Impedit iste officiis inventore.</p>
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et ratione iusto
+                        laudantium nisi similique. Recusandae hic corrupti doloribus autem asperiores assumenda
+                        repudiandae quo ullam laudantium nihil! Impedit iste officiis inventore.</p>
                 </div>
             </div>
         </div>
@@ -42,7 +46,7 @@
                     <p class="text">Possuo conhecimentos e já desenvolvi projetos com essas tecnologias!</p>
                 </div>
                 <div class="container-card-tecnologies">
-                    @for(tec of tecnologies; track $index){
+                    @for(tec of technologies; track $index){
                     <div class="card" #cards>
                         <i class="{{tec.icon}} icon"></i>
                         {{tec.description}}
@@ -113,7 +117,7 @@
                             </div>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
         </div>
     </div>

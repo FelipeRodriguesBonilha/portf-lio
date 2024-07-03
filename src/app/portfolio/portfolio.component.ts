@@ -23,7 +23,6 @@ interface tecs {
 })
 export class PortfolioComponent {
   @ViewChild('texts') textsRef!: ElementRef;
-  @ViewChildren('navs') navsRefs!: QueryList<ElementRef>;
   @ViewChild('writer') writerRef!: ElementRef;
   @ViewChild('dot', { static: false }) dotRef!: ElementRef;
   @ViewChild('image') imageRef!: ElementRef;
@@ -39,7 +38,7 @@ export class PortfolioComponent {
     'Apaixonado por programação'
   ];
 
-  tecnologies: tecs[] = [
+  technologies: tecs[] = [
     { icon: 'devicon-typescript-plain', description: 'TypeScript' },
     { icon: 'devicon-angularjs-plain', description: 'Angular' },
     { icon: 'devicon-nestjs-original', description: 'Nest JS' },
@@ -195,7 +194,6 @@ export class PortfolioComponent {
   private killAllTweens(): void {
     gsap.killTweensOf([
       this.textsRef.nativeElement,
-      ...this.navsRefs.toArray().map(ref => ref.nativeElement),
     ]);
   }
 }

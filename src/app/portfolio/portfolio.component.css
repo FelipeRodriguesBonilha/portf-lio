@@ -2,6 +2,7 @@
     background-color: #252525;
     background-size: contain;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .max-width {
@@ -11,13 +12,15 @@
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* main */
-.main {
+.container-main {
     height: 800px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .texts {
@@ -32,10 +35,6 @@
     font-size: 40px;
 }
 
-/* .paragraph {
-    text-shadow: 0 0 20px rgba(149, 0, 255, 0.5);
-} */
-
 .paragraph-writer {
     color: #b055c7;
 }
@@ -43,7 +42,6 @@
 .container-writer {
     display: flex;
     align-items: flex-end;
-    /* Alinha o conteúdo na parte inferior do contêiner */
 }
 
 .btn-linkedin,
@@ -59,7 +57,6 @@
     transition: .5s;
     cursor: pointer;
     box-shadow: 0 0 20px rgba(150, 0, 255, 0.5);
-    /* Sombra roxa */
 }
 
 .btn-linkedin:hover,
@@ -67,7 +64,6 @@
     transform: scale(1.1);
     background-color: #b055c7;
 }
-
 
 @keyframes blink {
     0% {
@@ -189,13 +185,15 @@
 .row-cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .container-card-projects .card-project {
     display: flex;
     flex-direction: column;
     height: 250px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     margin: 20px;
     color: #ffffff;
     border: 2px solid #b055c7;
